@@ -10,16 +10,20 @@ nav {
   color: white;
 }
 
-.App-link {
-  color: white;
+.navLink {
   text-decoration: none;
+  color: aliceblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+  background-color: #6e6e6e;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: aliceblue;
 }

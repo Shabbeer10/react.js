@@ -13,7 +13,7 @@ function UserProfile() {
     }, [username]);
 
     return (
-        <div>
+        <div class='container'>
             <h1>User Profile: {profile ? profile.name : 'Loading...'}</h1>
             <p>{profile ? profile.bio : ''}</p>
         </div>
