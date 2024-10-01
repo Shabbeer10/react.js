@@ -1,16 +1,20 @@
 import './App.css';
 import React from 'react';
-import { Counter, Component } from './script';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './Home';
+import About from './About';
+import Navbar from './Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>React App</h1>
-      </header>
-        <Counter/>
-        <Component/>
-    </div>
+    <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/about' element={<About/>}/>
+        {/* <Route path='/user/:username' element={<UserProfile/>}/> */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 

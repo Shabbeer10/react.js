@@ -14,7 +14,7 @@ export function Component(){
     const [data, setData] = useState(null);
 
     useEffect(()=> {
-        fetch('https://api.example.com/data')
+        fetch("some data")
             .then(response=> response.json())
             .then(data => setData(data));
     }, []); // empty array means this effect runs once
