@@ -7,7 +7,7 @@ function Navbar(){
         <nav>
             <Link className="navLink" to='/'>Home</Link>
             <Link className="navLink" to='/about'>About</Link>
-            <Link className="navLink" to='/user/shabbeer'>User Profile</Link>
+            <Link className="navLink" to='/user/Shabbeer'>User Profile</Link>
         </nav>
     );
 }

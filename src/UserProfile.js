@@ -7,14 +7,14 @@ function UserProfile() {
 
     useEffect(()=>{
         const fetchProfile = async ()=> {
-            setProfile({name: username, bio: 'Stuff about the user.'});
+            setProfile({name: username, bio: 'Here is some stuff about the user.'});
         };
         fetchProfile();
     }, [username]);
 
     return (
         <div class='container'>
-            <h1>User Profile: {profile ? profile.name : 'Loading...'}</h1>
+            <h1>Welcome {profile ? profile.name : 'Loading...'}</h1>
             <p>{profile ? profile.bio : ''}</p>
         </div>
     );
