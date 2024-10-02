@@ -4,6 +4,7 @@ from '@mui/material';
 import { users } from './userData.js';
 
 export default function CardComp() { 
+	
 	const dataItems = users.map((item) => {
 		return(
 			<div style={{ margin: 10 }} key={item.id}> 

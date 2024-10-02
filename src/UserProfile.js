@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
 import CardComp from './CardComp';
-import { users } from './userData';
+import { admins } from './adminData';
 
-function UserProfile() {
+export default function UserProfile() {
     const {username} = useParams();
     const [profile,setProfile] = useState(null);
 
@@ -22,5 +22,3 @@ function UserProfile() {
         </div>
     );
 }
-
-export default UserProfile;
