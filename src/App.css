@@ -24,6 +24,11 @@ nav {
   align-items: center;
 }
 
+#card-container{
+  display: grid;
+  grid-template-columns: auto auto auto
+}
+
 h1 {
   color: aliceblue;
 }

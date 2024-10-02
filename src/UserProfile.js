@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
+import CardComp from './CardComp';
+import { users } from './userData';
 
 function UserProfile() {
     const {username} = useParams();
@@ -13,9 +15,10 @@ function UserProfile() {
     }, [username]);
 
     return (
-        <div class='container'>
-            <h1>Welcome {profile ? profile.name : 'Loading...'}</h1>
-            <p>{profile ? profile.bio : ''}</p>
+        <div className='container'>
+            <h1>{profile ? `Welcome, Administrator ${profile.name}` : 'Loading Identity...'}</h1>
+            <p>{profile ? profile.bio : 'Loading Bio'}</p>
+            <CardComp />
         </div>
     );
 }
