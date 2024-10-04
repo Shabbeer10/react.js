@@ -11,13 +11,13 @@ export default function CardComp() {
 			<Card raised={true} sx={{ maxWidth: 400 }}> 
 				<CardMedia 
 					component="img"
-					height="200"
+					height="200px"
 					image= {item.img}
 					alt="Logo"
 				/> 
 				<CardContent sx={{ backgroundColor: "#E8E8E8" }}> 
 					<h3>{item.name}({item.age})</h3> 
-					<h4 style={{ color: "blue" }}> 
+					<h4 style={{ color: "blue", maxHeight: 40, }}> 
 						{item.description}
 					</h4> 
 				</CardContent> 

@@ -1,0 +1,60 @@
+[
+     
+        {
+            "id": 1,
+            "name": "Alice",
+            "description": "A software engineer who loves solving complex problems.",
+            "age": 25,
+            "image": "https://example.com/image1.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Bob",
+            "description": "A graphic designer with a passion for modern art.",
+            "age": 32,
+            "image": "https://example.com/image2.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Charlie",
+            "description": "An outdoor enthusiast and nature photographer.",
+            "age": 29,
+            "image": "https://example.com/image3.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Diana",
+            "description": "A data scientist who enjoys analyzing big data sets.",
+            "age": 27,
+            "image": "https://example.com/image4.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Eve",
+            "description": "A music producer with a deep love for electronic music.",
+            "age": 31,
+            "image": "https://example.com/image5.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Frank",
+            "description": "A mechanical engineer with an interest in robotics.",
+            "age": 34,
+            "image": "https://example.com/image6.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Grace",
+            "description": "A yoga instructor with a passion for mindfulness.",
+            "age": 28,
+            "image": "https://example.com/image7.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Hank",
+            "description": "A chef who specializes in vegan cuisine.",
+            "age": 36,
+            "image": "https://example.com/image8.jpg"
+        }
+    
+]
