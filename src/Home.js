@@ -1,12 +1,10 @@
 import React from "react";
-import { Counter } from "./script";
+import Dashboard from "./Dashboard";
 
 function Home() {
     return (
         <div className='container'>
-            <h1>Home Page</h1>
-            <p>Welcome to the home page</p>
-            <Counter/>
+            <Dashboard/>
         </div>
     )
 }

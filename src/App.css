@@ -29,6 +29,6 @@ nav {
   grid-template-columns: auto auto auto ;
 }
 
-h1 {
+h1, h4 {
   color: aliceblue;
 }

@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
 import CardComp from './CardComp';
-import { admins } from './adminData';
 
 export default function UserProfile() {
     const {username} = useParams();

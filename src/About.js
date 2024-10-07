@@ -3,8 +3,8 @@ import React from "react";
 function About() {
     return (
         <div className="container">
-            <h1>About Page</h1>
-            <p>Welcome to the about page</p>
+            <h1>About Us</h1>
+            <p>A site where people can sign up for no reason what so ever!</p>
         </div>
     )
 }
