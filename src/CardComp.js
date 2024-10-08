@@ -13,20 +13,17 @@ export default function CardComp() {
 					component="img"
 					height="200px"
 					image= {item.img}
-					alt="Logo"
+					alt="Profile Picture"
 				/> 
 				<CardContent sx={{ backgroundColor: "#E8E8E8" }}> 
 					<h3>{item.name}({item.age})</h3> 
-					<h4 style={{ color: "blue", maxHeight: 40, }}> 
+					<h4 style={{ color: "gray", maxHeight: 40, }}> 
 						{item.description}
 					</h4> 
 				</CardContent> 
 				<CardActions > 
 					<Button variant="contained" color="success"> 
 						Show more
-					</Button>
-					<Button variant="contained" color="warning"> 
-						Share 
 					</Button>  
 				</CardActions> 
 			</Card> 

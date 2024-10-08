@@ -16,7 +16,7 @@ This repository contains my projects, exercises, and notes as I learn **React.js
 
 ## Why I'm Learning React.js
 
-React.js is widely used for building modern web applications. Its component-based architecture and powerful tools for managing state and UI make it essential for frontend development. As part of my journey a full-stack developer, mastering React is key to building efficient, scalable, and interactive user interfaces.
+React.js is widely used for building modern web applications. Its component-based architecture and powerful tools for managing state and UI make it essential for frontend development. As part of my journey as a full-stack developer, mastering React is key to building efficient, scalable, and interactive user interfaces.
 
 ## Topics Covered So Far
 

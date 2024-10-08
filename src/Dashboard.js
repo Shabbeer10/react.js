@@ -79,7 +79,7 @@ const Dashboard = () => {
         <Grid item xs={12} md={6}>
           <Paper style={{ padding: '20px', backgroundColor: 'lightgray' }}>
             <Typography variant="h6" gutterBottom>
-              User Demographics
+              Age Demographics
             </Typography>
             <Typography variant="body2" gutterBottom>
               Age groups of users using the site.

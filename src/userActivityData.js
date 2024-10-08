@@ -37,7 +37,7 @@ export const userActivityData = [
     { name: '65+', value: 189 },
   ];
   
-  // Additional Data: User Engagement (Optional)
+  // User Engagement
   export const userEngagementData = [
     { day: 'Monday', engagement: 2400 },
     { day: 'Tuesday', engagement: 2210 },
