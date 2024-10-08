@@ -23,7 +23,7 @@ export default function UserProfile() {
                     setError('User not found.');
                 }
                 setLoading(false);
-            }, 1000); // pretend network delay
+            }, 2000); // pretend network delay
         };
 
         fetchProfile();
