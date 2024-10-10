@@ -19,6 +19,7 @@ nav {
   background-color: #6e6e6e;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
   justify-content: center;
   align-items: center;

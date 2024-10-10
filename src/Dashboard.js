@@ -22,7 +22,7 @@ const Dashboard = () => {
   return (
     <div style={{ padding: '20px', backgroundColor: 'grey'}}>
       <Typography variant="h4" gutterBottom>
-        Sign^4What?
+        SignUp4What?
       </Typography>
       <Grid container spacing={3}>
         {/* Line Chart: Active Users Over the Week */}

@@ -1,6 +1,8 @@
+// src/components/UserProfile.js
+
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Card,CardActionArea, CardMedia, CardContent,Typography } from '@mui/material';
+import { Card, CardActionArea, CardMedia, CardContent, Typography } from '@mui/material';
 import { admins } from './adminData'; // Adjust the path as necessary
 import CardComp from './CardComp';
 
@@ -14,16 +16,15 @@ export default function UserProfile() {
         const fetchProfile = () => {
             setLoading(true);
             setError(null);
-            // Simulate data fetching with a timeout
-            setTimeout(() => {
-                const user = admins.find(admin => admin.alias.toLowerCase() === username.toLowerCase());
-                if (user) {
-                    setProfile(user);
-                } else {
-                    setError('User not found.');
-                }
-                setLoading(false);
-            }, 2000); // pretend network delay
+
+            // Simulate fetching the profile based on username
+            const user = admins.find(admin => admin.alias.toLowerCase() === username.toLowerCase());
+            if (user) {
+                setProfile(user);
+            } else {
+                setError('User not found.');
+            }
+            setLoading(false);
         };
 
         fetchProfile();
@@ -32,28 +33,28 @@ export default function UserProfile() {
     if (loading) {
         return (
             <div className='container'>
-            <Card sx={{ minWidth: 600 }}>
-            <CardActionArea>
-                <CardMedia
-                component="img"
-                height="140"
-                image= ''
-                alt= ''
-                />
-                <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                    Loading Admin...
-                </Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                    <p><strong>Title:</strong>Loading...</p>
-                    <p><strong>Age:</strong>Loading...</p>
-                    <p>Loading Bio...</p>
-                </Typography>
-                </CardContent>
-            </CardActionArea>
-            </Card>
-            <CardComp />
-        </div>
+                <Card sx={{ minWidth: 600 }}>
+                    <CardActionArea>
+                        <CardMedia
+                            component="img"
+                            height="140"
+                            image=''
+                            alt=''
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="div">
+                                Loading Admin...
+                            </Typography>
+                            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                                <p><strong>Title:</strong> Loading...</p>
+                                <p><strong>Age:</strong> Loading...</p>
+                                <p>Loading Bio...</p>
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+                <CardComp />
+            </div>
         );
     }
 
@@ -68,28 +69,30 @@ export default function UserProfile() {
 
     return (
         <div className='container'>
-            <Card sx={{ maxWidth: 600 }}>
-            <CardActionArea>
-                <CardMedia
-                component="img"
-                height="140"
-                image= {profile.image}
-                alt= {`${profile.alias}`}
-                />
-                <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                    Welcome, Administrator {profile.alias}
-                </Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                    <p><strong>Title:</strong> {profile.title}</p>
-                    <p><strong>Age:</strong> {profile.age}</p>
-                    <p>{profile.bio}</p>
-                </Typography>
-                </CardContent>
-            </CardActionArea>
+            <Card sx={{ maxWidth: 500}}>
+                <CardActionArea>
+                    <CardMedia
+                        component="img"
+                        height="140"
+                        image={profile.image} // Use profile data
+                        alt={`${profile.alias}`}
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="div">
+                            Welcome, Administrator {profile.alias}
+                        </Typography>
+                        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                            <Typography><strong>Title:</strong> {profile.title}</Typography>
+                            <Typography><strong>Age:</strong> {profile.age}</Typography>
+                            <Typography>{profile.bio}</Typography>
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
             </Card>
+            <Typography variant="h4" gutterBottom sx={{margin: 5, textDecoration: 'underline'}}>
+                List of User Profiles:
+            </Typography>
             <CardComp />
         </div>
     );
 }
-
