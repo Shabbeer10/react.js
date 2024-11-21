@@ -46,5 +46,5 @@ To run the React projects in this repository, follow these steps:
 2. **Clone this repository**:
 
    ```bash
-   git clone https://github.com/yourusername/reactjs-learning-journey.git
-   cd reactjs-learning-journey
+   git clone https://github.com/yourusername/react.js.git
+   cd react.js
